@@ -1,0 +1,57 @@
+{
+    "name": "sails-cloudant-orm",
+    "version": "0.0.1",
+    "description": "Waterline Sails Adapter for IBM Cloudant Database",
+    "main": "index.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "test": "mocha test/unit && node test/integration/runner -R spec -b"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/carlosgalveias/sails-cloudant-orm.git"
+    },
+    "keywords": [
+        "Cloudant",
+        "Waterline",
+        "Sails",
+        "orm",
+        "sailsjs",
+        "sails.js",
+    ],
+    "author": "Carlos Galveias",
+    "main": "index.js",
+    "maintainers": [{
+        "name": "Carlos Galveias",
+        "email": "carlos.galveias@gmail.com"
+    }],
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/carlosgalveias/sails-cloudant-orm/issues"
+    },
+    "sailsAdapter": {
+        "sailsVersion": "~0.10.0",
+        "implements": [
+            "semantic",
+            "queryable"
+        ]
+    },
+    "homepage": "https://github.com/carlosgalveias/sails-cloudant-orm#readme",
+    "dependencies": {
+        "async": "^0.7.0",
+        "cookie": "~0.1.1",
+        "deep-merge": "~0.3.1",
+        "handlebars": "~2.0.0-alpha.2",
+        "nano": "~5.7.1",
+        "underscore": "^1.6.0",
+        "xtend": "~2.1.2"
+    },
+    "devDependencies": {
+        "captains-log": "~0.10.6",
+        "mocha": "*",
+        "root-require": "~0.2.0",
+        "waterline-adapter-tests": "~0.10.0"
+    },
+}
