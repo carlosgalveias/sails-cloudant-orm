@@ -62,7 +62,7 @@ User.merge(id, someAttributes, function(err, homer) {
 
 #### Authenticate
 
-Authenticate against the CouchDB user database (`_users`).
+Authenticate against the Cloudant user database (`_users`).
 
 Example:
 
@@ -78,7 +78,7 @@ Users.authenticate(username, password, function(err, sessionId, username, roles)
 
 #### Session
 
-Get the CouchDB session object.
+Get the Cloudant session object.
 
 Example:
 

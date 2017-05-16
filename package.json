@@ -19,7 +19,7 @@
         "Sails",
         "orm",
         "sailsjs",
-        "sails.js",
+        "sails.js"
     ],
     "author": "Carlos Galveias",
     "main": "index.js",
@@ -53,5 +53,5 @@
         "mocha": "*",
         "root-require": "~0.2.0",
         "waterline-adapter-tests": "~0.10.0"
-    },
+    }
 }
