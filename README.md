@@ -16,6 +16,21 @@ Add this module to your sails.js project:
 $ npm install sails-cloudant-orm --save
 ```
 
+## Configuration
+
+```javascript
+var db = {
+    adapter: 'sails-cloudant-orm', // adapter module
+    host: 'localhost', // server address
+    port: '443', // database port
+    username: process.env.DB_USER,	// database user name
+    password: process.env.DB_PASSWORD, // database password 
+    database: 'mixblog', // the database name
+    migrate: 'safe', // 'safe' is safe for production, 'drop' will drop the database every time, 'alter' will add / delete columns
+    https: true // if server is http or https
+}
+```
+
 ## Use
 
 ### Class methods
@@ -85,10 +100,10 @@ http://sailsjs.org
 It provides a uniform API for accessing stuff from different kinds of databases, protocols, and 3rd party APIs. That means you write the same code to get users, whether they live in MySQL, LDAP, MongoDB, or Facebook.
 
 
-## Contributors
+## Credits
 
-This adapter was published in npm by Daniel Duan - https://www.npmjs.com/~danielduan , many thanks to him
-And thanks so much to Pedro Teixeira([@pgte](https://twitter.com/pgte)) for building this adapter.
+The sails-couchdb-orm adapter was published in npm by Daniel Duan - https://www.npmjs.com/~danielduan , many thanks to him
+And thanks so much to Pedro Teixeira([@pgte](https://twitter.com/pgte)) for building this adapter (as written in other package readme).
 
 ## License
 
